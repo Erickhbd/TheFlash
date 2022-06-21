@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.pipe-game {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.super-mario{
+    width:240px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump-mario {
+    animation: mario-animation 500ms ease-out;
+}
+
+.cloud-game{
+    position: absolute;
+    width: 200%;
+    animation: clouds-animation 20s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation {
+    from{
+        right: -550px;
+    }
+    to{
+        right:  100%;
+    }
+}
+
+@keyframes mario-animation{
+    0% {
+        bottom:0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    70%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0%
+    }
+
+}
