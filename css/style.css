@@ -12,27 +12,28 @@
     overflow: hidden;
 }
 
-.pipe-game {
+.flash-reverso {
     position: absolute;
     bottom: 0;
     width: 120px;
-    animation: pipe-animation 1.5s infinite linear;
+    animation: pipe-animation 1500ms infinite linear;
 }
 
-.super-mario{
-    width:240px;
-    position: absolute;
+.super-flash{
+    width:330px;
+    position: fixed;
     bottom: 0;
 }
 
 .jump-mario {
-    animation: mario-animation 500ms ease-out;
+    animation: mario-animation 600ms ;
 }
 
-.cloud-game{
+.central-city{
     position: absolute;
-    width: 200%;
-    animation: clouds-animation 20s infinite linear;
+    width: 100vw;
+    height: 100vh;
+    animation: clouds-animation 10s infinite;
 }
 
 @keyframes pipe-animation {

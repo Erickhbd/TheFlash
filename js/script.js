@@ -1,5 +1,5 @@
-const mario = document.querySelector(".super-mario");
-const pipe = document.querySelector(".pipe-game");
+const mario = document.querySelector(".super-flash");
+const pipe = document.querySelector(".flash-reverso");
 
 const jump = () => {
   mario.classList.add("jump-mario");
@@ -23,8 +23,8 @@ const loopGame = setInterval(() => {
     mario.style.bottom = `${marioPosition}px`;
 
     mario.src = "./images/flash-game-over.png";
-    mario.style.width = "115px";
-    mario.style.margiRight = "50px";
+    mario.style.width = "180px";
+    mario.style.marginLeft = "-100px";
     
 
     clearInterval(loopGame);
