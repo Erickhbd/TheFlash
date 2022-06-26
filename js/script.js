@@ -15,7 +15,7 @@ const loopGame = setInterval(() => {
     .getComputedStyle(mario)
     .bottom.replace("px", "");
 
-  if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+  if (pipePosition <= 180 && pipePosition > 0 && marioPosition < 80) {
     pipe.style.animation = "none";
     pipe.style.left = `${pipePosition}px`;
 
@@ -24,7 +24,8 @@ const loopGame = setInterval(() => {
 
     mario.src = "./images/flash-game-over.png";
     mario.style.width = "180px";
-    mario.style.marginLeft = "-100px";
+    mario.style.marginLeft = "-100/*px";
+    
     
 
     clearInterval(loopGame);
@@ -33,3 +34,4 @@ const loopGame = setInterval(() => {
 
 document.addEventListener("keydown",  jump);
 document.addEventListener("click", jump);
+ 
