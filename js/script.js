@@ -1,6 +1,6 @@
 const mario = document.querySelector(".super-flash");
 const pipe = document.querySelector(".flash-reverso");
-const game = document.querySelector("game");
+const game = document.querySelector(".game");
 
 //tentativaplacar 1
 /*function criaPlacar(){
@@ -64,9 +64,9 @@ const loopGame = setInterval(() => {
     mario.style.animation = "none";
     mario.style.bottom = `${marioPosition}px`;
 
-    mario.src = "./images/flash-game-over.png";
+    mario.src = "./Images/flash-game-over.png";
     mario.style.width = "180px";
-    mario.style.marginLeft = "-100/*px";
+    mario.style.marginLeft = "100px";
     
      clearInterval(loopGame);
   }

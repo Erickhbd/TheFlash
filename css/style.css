@@ -39,7 +39,6 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    animation: clouds-animation 10s infinite;
 }
 
 @keyframes pipe-animation {
