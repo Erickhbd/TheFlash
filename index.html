@@ -10,11 +10,27 @@
     </head>
     <body>
         <div class="game">
-            <h1 class="score">score:</h1>
-            <img src="./imagens/central-city.webp" class="central-city" />
+             <img src="./imagens/central-city.webp" class="central-city" />
             <img src="./imagens/flash.gif" class="super-flash" />
             <img src="./imagens/flash-reverso.png" class="flash-reverso" />
+            <img src="./imagens/game-over.png" class="hidden" id="over">
+
+            <div class="score">
+                <h2>Pontos:<span style="font-size: 25pt" id="count">0</span></h2>
+             </div>
+
+             <button id="button" class="hidden" class="over">Restart</button>
+
+
         </div>
+
+        <!-- Sons do jogo !-->
+    <audio src="./audio/tema flash.mpeg" preload="auto" id="musica"></audio>
+    <audio src="./audio/audio_Mario pulo.wav" preload="auto" id="pulo"></audio>
+    <audio src="./audio/audio_Mario Morte.mp3" preload="auto" id="morte"></audio>
+    <audio src="./audio/audio_Mario Game Over.mp3" preload="auto" id="somGameover"></audio>
+
+
         <script src="./js/script.js"></script>
     </body>
 </html>

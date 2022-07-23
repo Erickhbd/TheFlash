@@ -1,5 +1,24 @@
+let musica=document.getElementById("musica");
+let pulo=document.getElementById("pulo");
+let morte=document.getElementById("morte");
+let fim=document.getElementById("somGameover");
+
 const mario = document.querySelector(".super-flash");
 const pipe = document.querySelector(".flash-reverso");
+
+const gameOver = document.getElementById('over');
+const btn = document.querySelector('#button')
+
+const score = document.querySelector('.score');
+var count = 0;
+const time = setInterval(() => {
+  count++;
+
+  document.getElementById('count').innerHTML = count;
+}, 1);
+
+musica.play();
+
 
 
 const jump = () => {
@@ -26,8 +45,28 @@ const loopGame = setInterval(() => {
     mario.src = "./imagens/flash-game-over.png";
     mario.style.width = "140px";
     mario.style.marginRight = "0/*px";
+    morte.play();
+    musica.pause();
+
+
+    const loop2 = setInterval(() => {
+      document.getElementById('countEnd').innerHTML = count;
+  })
+
+    gameOver.classList.add('over')
+    gameOver.classList.remove('hidden')
+
+    clearInterval(time);
+    clearInterval(loopGame);
+
+    btn.classList.add('over')
+    btn.classList.remove('hidden')
+
     
-     clearInterval(loopGame);
+    btn.addEventListener('click', function() {
+
+      location.reload()
+    })
   }
 }, 10);
 
