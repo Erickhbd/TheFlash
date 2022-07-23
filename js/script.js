@@ -23,7 +23,8 @@ musica.play();
 
 function jump() {
   mario.classList.add("jump-mario");
-
+  pulo.play(); 
+  
   setTimeout(() => {
     mario.classList.remove("jump-mario");
   }, 600);
