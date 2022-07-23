@@ -21,13 +21,13 @@ musica.play();
 
 
 
-const jump = () => {
+function jump() {
   mario.classList.add("jump-mario");
 
   setTimeout(() => {
     mario.classList.remove("jump-mario");
   }, 600);
-};
+}
 
 const loopGame = setInterval(() => {
   const pipePosition = pipe.offsetLeft;
