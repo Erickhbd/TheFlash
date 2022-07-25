@@ -15,7 +15,7 @@ const time = setInterval(() => {
   count++;
 
   document.getElementById('count').innerHTML = count;
-}, 1);
+}, 100);
 
 musica.play();
 
